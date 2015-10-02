@@ -1,0 +1,23 @@
+{
+  "name": "react-flux-sample",
+  "version": "0.0.1",
+  "description": "React + Flux sample",
+  "repository": "https://github.com/f96q/react-flux-sample",
+  "main": "src/main.js",
+  "author": "danny",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "react": "^0.13.3",
+    "eventemitter3": "1.1.1",
+    "uuid": "2.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "watchify": "^2.1.1",
+    "babelify": "^6.1.1",
+    "uglify-js": "~2.4.15"
+  },
+  "scripts": {
+    "build": "browserify --transform babelify src/main.js | uglifyjs -cm > bundle.js"
+  }
+}
